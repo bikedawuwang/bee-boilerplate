@@ -55,7 +55,15 @@ const BaseConfig: webpack.Configuration = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                use: ['style-loader', 'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: [
+                                require("autoprefixer")
+                            ]
+                        }
+                    }]
             },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -76,6 +84,14 @@ const BaseConfig: webpack.Configuration = {
                     },
                     {
                         loader: 'less-loader'
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: [
+                                require("autoprefixer")
+                            ]
+                        }
                     }
                 ]
             }
