@@ -4,7 +4,7 @@
 
 基于 react + typescript + mobx 的前端脚手架
 
-可以帮助用户快速搭建前端开发环境
+可以帮助用户快速搭建前端开发环境，可以搭配 [Bumblebee](https://github.com/JimLiuxinghai/Bumblebee)食用，风味更佳！
 
 ## Getting Started
 
