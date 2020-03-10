@@ -1,0 +1,63 @@
+{
+  "name": "bee-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config config/webpack.dev.config.ts --open",
+    "build": "set NODE_ENV=production && webpack --config config/webpack.prod.config.ts",
+    "git": "git add . && git commit && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bikedawuwang/bee-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bikedawuwang/bee-boilerplate/issues"
+  },
+  "homepage": "https://github.com/bikedawuwang/bee-boilerplate#readme",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "copy-webpack-plugin": "^5.1.1",
+    "mobx": "^3.1.7",
+    "react": "^16.4.1",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.2"
+  },
+  "devDependencies": {
+    "@types/compression-webpack-plugin": "^0.4.2",
+    "@types/html-webpack-plugin": "^3.2.0",
+    "@types/node": "^10.5.7",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-router": "^4.0.29",
+    "@types/react-router-dom": "^4.0.1",
+    "@types/webpack": "^4.4.9",
+    "@types/webpack-env": "^1.13.6",
+    "@types/webpack-merge": "^4.1.3",
+    "antd": "^3.8.0",
+    "compression-webpack-plugin": "^1.1.11",
+    "css-loader": "^1.0.0",
+    "file-loader": "^5.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.8.0",
+    "less-loader": "^4.1.0",
+    "mobx-react": "^4.1.3",
+    "mobx-react-devtools": "^4.2.11",
+    "mobx-react-router": "^4.0.4",
+    "react-dom": "^16.4.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.0.0",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.21.0",
+    "ts-import-plugin": "^1.4.4",
+    "ts-loader": "^4.4.2",
+    "ts-node": "^7.0.0",
+    "url-loader": "^1.1.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  }
+}
