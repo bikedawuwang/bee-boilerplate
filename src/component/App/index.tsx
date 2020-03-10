@@ -17,7 +17,9 @@ class App extends React.Component<IProps, {}> {
         return (
             <div className={styles.div}>
                 <div className={styles.icon}></div>
-                <p className={styles.p}>{this.props.appStore.text}</p>
+                <div className={styles.siteHeader}>
+                    <div className={styles.siteTitle}>{this.props.appStore.text}</div>
+                </div>
             </div>);
     }
 }

@@ -15,3 +15,32 @@
     margin-top: 10px;
     font-size: 20px;
 }
+
+.siteHeader {
+    text-align: center;
+}
+
+.siteTitle {
+    font-size: 88px;
+    text-align: center;
+    margin-top: 30px;
+    color: #f35626;
+    background-image: linear-gradient(92deg, #f35626, #feab3a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 5s infinite linear;
+}
+
+/*-----------------------------------*\
+                ANIMATIONS
+\*-----------------------------------*/
+
+@keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
