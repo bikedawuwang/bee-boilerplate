@@ -2,7 +2,8 @@ import * as React from "react";
 import { inject, observer } from "mobx-react";
 import { AppStore } from "../../store";
 
-import './index.less'
+// const styles = require('./index.less');
+import styles from './index.less';
 
 interface IProps {
     appStore: AppStore;
@@ -14,9 +15,9 @@ interface IProps {
 class App extends React.Component<IProps, {}> {
     render() {
         return (
-            <div className='div'>
-                <div className="icon"></div>
-                <p className='p'>{this.props.appStore.text}</p>
+            <div className={styles.div}>
+                <div className={styles.icon}></div>
+                <p className={styles.p}>{this.props.appStore.text}</p>
             </div>);
     }
 }

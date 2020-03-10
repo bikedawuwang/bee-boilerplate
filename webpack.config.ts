@@ -68,7 +68,11 @@ const BaseConfig: webpack.Configuration = {
                         loader: 'style-loader'
                     },
                     {
-                        loader: 'css-loader'
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                            localIdentName: '[path][name]-[local]--[hash:base64:7]',
+                        }
                     },
                     {
                         loader: 'less-loader'
